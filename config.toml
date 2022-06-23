@@ -1,0 +1,98 @@
+baseURL = "https://test.site"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "Maybe this one work?"
+theme = "dream"
+
+disqusShortname = "g1eny0ung"
+
+enableRobotsTXT = true
+
+hasCJKLanguage = true
+
+# Paginate = 6
+
+enableGitInfo = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# https://gohugo.io/news/0.60.0-relnotes/
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  background = "#fff"
+  backgroundImage = "/me/background.jpg"
+  linkColor = "seagreen"
+
+  # dark mode
+  # defaultDark = true
+  backgroundDark = "#333"
+  backgroundImageDark = "/me/background.jpg"
+  darkLinkColor = "darkseagreen"
+  # darkNav = true
+  # dark404 = true
+
+  images = ["me/background.jpg"]
+
+  author = "g1eny0ung"
+  description = "g1eny0ung 的生活记录"
+  avatar = "/me/yy.jpg"
+  headerTitle = "g1eny0ung 的博客"
+  motto = "与其感慨路难行，不如马上出发。"
+  # maxTags = 5
+  # categoriesLimitInHeader = 6 # deprecated
+  # headerBottomText = "" # deprecated
+
+  # footerBottomText = ""
+
+  rss = true
+
+  utterancesRepo = "g1eny0ung/g1eny0ung.github.io"
+
+  # valine = true
+  # LEANCLOUD_APP_ID = ""
+  # LEANCLOUD_APP_KEY = ""
+
+  email = "g1enyy0ung@gmail.com"
+  # twitter = "g1eny0ung"
+  # facebook = "g1eny0ung"
+  # instagram = "g1eny0ung"
+  # mastodon = ""
+  # linkedin = "g1eny0ung"
+  # github = "g1eny0ung"
+  # stackoverflow = "5676489/g1eny0ung"
+  # codepen = "g1eny0ung"
+
+  siteStartYear = 2016
+
+  favicon = "/favicon.ico"
+
+  highlightjs = true
+  # highlightjsCDN = "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"
+  highlightjsExtraLanguages = ["clojure", "ocaml"]
+  highlightjsTheme = "tomorrow"
+  highlightjsThemeDark = "tomorrow-night"
+
+  # search
+  enableSearch = true
+
+  # options
+  showSummaryCoverInPost = true
+  # hasTwitterEmbed = true
+  # reversePostAndAside = true
+  # shareInAside = true
+  fixedNav = true
+  # collapsibleTags = true
+  # collapseBySummary = true
+
+[params.advanced]
+  customCSS = ["css/custom.css"]
+  # customJSBefore = []
+  # customJS = []
+
+[params.experimental]
+  jsDate = true
+  jsDateFormat = "yyyy年MM月dd日"
+  # jsDateFormat = "yyyy年MM月dd日，cccc"
