@@ -1,98 +1,41 @@
-baseURL = "https://test.site"
+title = "Portfolio"
+baseURL = "https://yoursiteurl.dev"
 languageCode = "en-us"
-defaultContentLanguage = "en"
-title = "Maybe this one work?"
-theme = "dream"
+theme = ["ananke"]
+resourceDir = "../resources"
 
-disqusShortname = "g1eny0ung"
-
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+Paginate = 7 # this is set low for demonstrating with dummy content. Set to a higher number
+googleAnalytics = ""
 enableRobotsTXT = true
 
-hasCJKLanguage = true
+[languages]
+  [languages.en]
+    title = "Ananke"
+    weight = 1
+    contentDir = "content/en"
+    # languageDirection = 'rtl' for Right-To-Left languages
+  [languages.fr]
+    title = "Ananke Fr"
+    weight = 2
+    contentDir = "content/fr"
 
-# Paginate = 6
-
-enableGitInfo = true
-
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-
-# https://gohugo.io/news/0.60.0-relnotes/
-[markup.goldmark.renderer]
-  unsafe = true
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
 
 [params]
-  background = "#fff"
-  backgroundImage = "/me/background.jpg"
-  linkColor = "seagreen"
+  text_color = ""
+  author = ""
+  favicon = ""
+  site_logo = ""
+  description = "The last theme you'll ever need. Maybe."
+  # choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  background_color_class = "bg-black"
+  recent_posts_number = 3
 
-  # dark mode
-  # defaultDark = true
-  backgroundDark = "#333"
-  backgroundImageDark = "/me/background.jpg"
-  darkLinkColor = "darkseagreen"
-  # darkNav = true
-  # dark404 = true
-
-  images = ["me/background.jpg"]
-
-  author = "g1eny0ung"
-  description = "g1eny0ung 的生活记录"
-  avatar = "/me/yy.jpg"
-  headerTitle = "g1eny0ung 的博客"
-  motto = "与其感慨路难行，不如马上出发。"
-  # maxTags = 5
-  # categoriesLimitInHeader = 6 # deprecated
-  # headerBottomText = "" # deprecated
-
-  # footerBottomText = ""
-
-  rss = true
-
-  utterancesRepo = "g1eny0ung/g1eny0ung.github.io"
-
-  # valine = true
-  # LEANCLOUD_APP_ID = ""
-  # LEANCLOUD_APP_KEY = ""
-
-  email = "g1enyy0ung@gmail.com"
-  # twitter = "g1eny0ung"
-  # facebook = "g1eny0ung"
-  # instagram = "g1eny0ung"
-  # mastodon = ""
-  # linkedin = "g1eny0ung"
-  # github = "g1eny0ung"
-  # stackoverflow = "5676489/g1eny0ung"
-  # codepen = "g1eny0ung"
-
-  siteStartYear = 2016
-
-  favicon = "/favicon.ico"
-
-  highlightjs = true
-  # highlightjsCDN = "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"
-  highlightjsExtraLanguages = ["clojure", "ocaml"]
-  highlightjsTheme = "tomorrow"
-  highlightjsThemeDark = "tomorrow-night"
-
-  # search
-  enableSearch = true
-
-  # options
-  showSummaryCoverInPost = true
-  # hasTwitterEmbed = true
-  # reversePostAndAside = true
-  # shareInAside = true
-  fixedNav = true
-  # collapsibleTags = true
-  # collapseBySummary = true
-
-[params.advanced]
-  customCSS = ["css/custom.css"]
-  # customJSBefore = []
-  # customJS = []
-
-[params.experimental]
-  jsDate = true
-  jsDateFormat = "yyyy年MM月dd日"
-  # jsDateFormat = "yyyy年MM月dd日，cccc"
+[[params.ananke_socials]]
+name = "twitter"
+url = "https://twitter.com/GoHugoIO"
